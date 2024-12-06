@@ -17,7 +17,7 @@ I love language. 日本語を勉強しています
 
 I want to be an optical engineer(Because I think Apple Vision Pro is amazing) or a chip design engineer or a university professor. Now I'm exploring my possibilities.
 
-followings are the courses I'm studying：（contact me if you are interested）
+Followings are the courses I'm studying：（contact me if you are interested）
 
 [Physics of Semiconductors](https://www.bilibili.com/video/BV1fp4y1z7oF/?spm_id_from=333.788.videopod.episodes&vd_source=06b81024148c72a3449f77773c8792a9&p=5)
 
