@@ -22,13 +22,13 @@ repository               : "Markcgo/Markcgo.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "He Kefei"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Fuzhou, China"
+  employer         : "Fuzhou University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "1700041868@qq.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
