@@ -11,7 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in Fuzhou, Fuzhou University, 2025 (expected)
+* B.S. in Fuzhou, Fuzhou University, 2025
+* M.S. in Wuhan, Huazhong University of Science and Technology, 2028 (expected)
 
 Work experience
 ======
