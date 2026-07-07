@@ -4,99 +4,195 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>About · hemark</title>
-  <meta name="description" content="About Mark C" />
-  <link rel="stylesheet" href="./assets/css/style.css?v=20260707" />
+  <title>hemark</title>
+  <meta name="description" content="hemark personal website" />
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260707" />
 </head>
 
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <a href="index.html" class="brand">hemark</a>
+      <a href="/index.html" class="brand">hemark</a>
 
       <nav class="nav">
-        <a href="about.html">About</a>
-        <a href="notes.html">Notes</a>
-        <a href="blog.html">Blog</a>
+        <a href="/about.html">About</a>
+        <a href="/notes.html">Notes</a>
+        <a href="/blog.html">Blog</a>
       </nav>
     </div>
   </header>
 
-  <main class="page" id="about-page">
+  <main class="page" id="home">
     <aside class="sidebar">
       <div class="avatar-wrap">
-        <img src="./assets/img/avatar.png" alt="Mark avatar" class="avatar" />
+        <img src="/assets/img/avatar.png" alt="He Kefei avatar" class="avatar" />
       </div>
 
       <div class="profile">
-        <h1 class="name">Mark C</h1>
-        <p class="role">Graduate Student / Researcher / Learner</p>
+        <h1 class="name">He Kefei</h1>
+        <p class="role">Graduate / Lifelong Learner</p>
       </div>
 
       <div class="contact-block">
-        <p><span class="label">Email</span><br />markcgo@outlook.com</p>
-        <p><span class="label">GitHub</span><br /><a href="https://github.com/Markcgo" target="_blank">github.com/Markcgo</a></p>
+        <a class="contact-link" href="mailto:markcgo@outlook.com">
+          <span class="contact-icon">✉</span>
+          <span class="contact-text">Email</span>
+        </a>
+
+        <a class="contact-link" href="https://github.com/Markcgo" target="_blank">
+          <span class="contact-icon">⌘</span>
+          <span class="contact-text">GitHub</span>
+        </a>
+
+        <a class="contact-link" href="https://x.com/Hemarkc" target="_blank">
+          <span class="contact-icon">𝕏</span>
+          <span class="contact-text">X</span>
+        </a>
       </div>
     </aside>
 
     <section class="content">
       <section class="section intro">
-        <p class="eyebrow">About</p>
+        <p class="eyebrow">Personal Website</p>
 
-        <h2 class="page-title">
-          About me and this website.
+        <h2 class="hero-title">
+          Learning in public,<br />
+          Acquiring <span class="worldly-wisdom">worldly wisdom.</span>
         </h2>
 
-        <p class="page-desc">
-          I am currently a graduate student interested in AI, machine learning,
-          optoelectronic materials, investing, and long-form thinking.
+        <p class="hero-text">
+          I use this website to document what I am learning, thinking, and building.
+          It is a public notebook for long-term learning and personal knowledge accumulation.
         </p>
+
+        <div class="keyword-strip">
+          <span>AI</span>
+          <span>Investment</span>
+          <span>Research</span>
+          <span>Language</span>
+          <span>Books</span>
+        </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="about">
         <div class="section-head">
-          <h3>Who I am</h3>
+          <h3>About</h3>
         </div>
 
         <div class="section-body">
           <p>
-            I am Mark C. My current academic background is connected with optoelectronic
-            materials and characterization, while my long-term interests are expanding
-            toward AI, machine learning, scientific computing, and investing.
+            I am currently a graduate student interested in AI, machine learning,
+            optoelectronic materials, investing, and long-form thinking.
           </p>
 
           <p>
-            I use this website as a public notebook and a personal archive. Instead of
-            letting learning remain scattered, I want to turn what I read, ask, test,
-            and think into reusable notes, articles, and projects.
+            This website is where I turn scattered learning into reusable notes,
+            essays, projects, and reflections.
           </p>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="notes">
         <div class="section-head">
-          <h3>What I care about</h3>
+          <h3>Recent Notes</h3>
         </div>
 
-        <div class="section-body">
-          <p>
-            My current focus includes machine learning foundations, AI-assisted learning,
-            FLIM/TRPL and materials characterization, financial markets, and English writing.
-          </p>
+        <div class="section-body list-block">
+          <article class="entry">
+            <div class="entry-meta">2026-07-07 · Research</div>
+            <div class="entry-main">
+              <a href="/posts/first-note.html" class="entry-title">
+                Why does a shorter FLIM lifetime suggest stronger non-radiative recombination?
+              </a>
+              <p class="entry-desc">
+                A short note on FLIM lifetime, radiative decay, and competing loss channels.
+              </p>
+            </div>
+          </article>
 
-          <p>
-            The goal is not to collect information, but to build a durable knowledge system
-            that can support research, writing, and long-term personal growth.
-          </p>
+          <article class="entry">
+            <div class="entry-meta">2026-07-07 · Machine Learning</div>
+            <div class="entry-main">
+              <a href="#" class="entry-title">What exactly is a learning rate?</a>
+              <p class="entry-desc">
+                An intuitive explanation of step size, convergence, and instability in gradient descent.
+              </p>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-meta">2026-07-07 · Finance</div>
+            <div class="entry-main">
+              <a href="#" class="entry-title">How does a covered call make money?</a>
+              <p class="entry-desc">
+                A simple breakdown of premium income, upside cap, and assignment risk.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="section-head">
+          <h3>Recent Blog</h3>
+        </div>
+
+        <div class="section-body list-block">
+          <article class="entry">
+            <div class="entry-meta">2026-07-07 · Learning</div>
+            <div class="entry-main">
+              <a href="#" class="entry-title">Why I decided to build a learning garden</a>
+              <p class="entry-desc">
+                On learning in public, long-term thinking, and building a personal knowledge system.
+              </p>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-meta">2026-07-07 · Website</div>
+            <div class="entry-main">
+              <a href="#" class="entry-title">What I want this website to become</a>
+              <p class="entry-desc">
+                A note on structure, purpose, and how I want to use writing as a way to think.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="site-footer-inner">
+    <div class="footer-map">
+      <div class="footer-column">
+        <h4>Read</h4>
+        <p>
+          <a href="/notes.html">Notes</a>
+          <span>·</span>
+          <a href="/blog.html">Blog</a>
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Build</h4>
+        <p>
+          <a href="https://github.com/Markcgo" target="_blank">GitHub</a>
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:markcgo@outlook.com">Email</a>
+          <span>·</span>
+          <a href="https://x.com/Hemarkc" target="_blank">X</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
       <p>© 2026 hemark. Built by hand with HTML & CSS.</p>
-      <p><a href="mailto:markcgo@outlook.com">markcgo@outlook.com</a></p>
     </div>
   </footer>
 </body>
