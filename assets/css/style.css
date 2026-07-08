@@ -521,3 +521,10 @@ img {
     padding: 28px 22px 48px;
   }
 }
+
+.github-icon {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+  display: block;
+}
