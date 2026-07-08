@@ -64,25 +64,32 @@ img {
 }
 
 .brand {
-  font-size: 28px;
+  font-size: 31px;
   font-weight: 600;
   letter-spacing: 0.01em;
   font-family: Georgia, "Times New Roman", serif;
 }
 
+/* Top-right About / Notes / Blog */
 .nav {
   display: flex;
-  gap: 28px;
-  font-size: 15px;
+  gap: 42px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .nav a {
   color: var(--muted);
+  transition:
+    color 0.18s ease,
+    opacity 0.18s ease,
+    transform 0.18s ease;
 }
 
 .nav a:hover {
   color: var(--text);
   opacity: 1;
+  transform: translateY(-1px);
 }
 
 /* =========================
@@ -104,6 +111,14 @@ img {
   top: 24px;
   align-self: start;
 }
+
+.content {
+  min-width: 0;
+}
+
+/* =========================
+   Sidebar profile
+========================= */
 
 .avatar-wrap {
   width: 170px;
@@ -141,6 +156,10 @@ img {
   font-size: 17px;
 }
 
+/* =========================
+   Sidebar contact links
+========================= */
+
 .contact-block {
   margin-top: 44px;
   display: flex;
@@ -162,6 +181,7 @@ img {
   width: 22px;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   color: var(--muted);
   font-size: 16px;
 }
@@ -174,8 +194,11 @@ img {
   opacity: 0.65;
 }
 
-.content {
-  min-width: 0;
+.github-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
 }
 
 /* =========================
@@ -212,11 +235,6 @@ img {
   font-weight: 400;
   letter-spacing: -0.04em;
   font-family: Georgia, "Times New Roman", serif;
-}
-
-.hero-title em {
-  font-style: italic;
-  font-weight: 400;
 }
 
 .worldly-wisdom {
@@ -271,6 +289,41 @@ img {
 }
 
 /* =========================
+   Inner pages
+========================= */
+
+.page-title {
+  margin: 0;
+  max-width: 820px;
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: 1.04;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page-desc {
+  max-width: 780px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+#about-page .section-head h3,
+#notes-page .section-head h3,
+#blog-page .section-head h3 {
+  font-size: 36px;
+}
+
+#about-page .section-body,
+#notes-page .section-body,
+#blog-page .section-body {
+  font-size: 20px;
+  line-height: 1.85;
+}
+
+/* =========================
    Entry list
 ========================= */
 
@@ -312,39 +365,11 @@ img {
   font-size: 16px;
 }
 
-/* =========================
-   Inner pages
-========================= */
-
-.page-title {
+.empty-notes,
+.empty-blogs {
   margin: 0;
-  max-width: 820px;
-  font-size: clamp(52px, 7vw, 88px);
-  line-height: 1.04;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-.page-desc {
-  max-width: 780px;
-  margin: 28px 0 0;
   color: var(--muted);
-  font-size: 22px;
-  line-height: 1.7;
-}
-
-#about-page .section-head h3,
-#notes-page .section-head h3,
-#blog-page .section-head h3 {
-  font-size: 36px;
-}
-
-#about-page .section-body,
-#notes-page .section-body,
-#blog-page .section-body {
-  font-size: 20px;
-  line-height: 1.85;
+  font-size: 18px;
 }
 
 #notes-page .entry-title,
@@ -361,6 +386,111 @@ img {
 #notes-page .entry-meta,
 #blog-page .entry-meta {
   font-size: 14px;
+}
+
+/* =========================
+   Notes folder cards
+========================= */
+
+.note-folders {
+  padding-top: 14px;
+  padding-bottom: 66px;
+}
+
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 820px;
+}
+
+.folder-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.34);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.folder-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(182, 64, 50, 0.38);
+  box-shadow: 0 18px 42px rgba(23, 23, 23, 0.08);
+  opacity: 1;
+}
+
+.folder-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 35px;
+  margin-top: 7px;
+  border-radius: 7px 9px 9px 9px;
+  background: #d7b56d;
+  box-shadow:
+    inset 0 -8px 0 rgba(0, 0, 0, 0.06),
+    0 7px 16px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.folder-icon::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 3px;
+  width: 23px;
+  height: 12px;
+  border-radius: 7px 7px 0 0;
+  background: #c99e45;
+  transition: background 0.2s ease;
+}
+
+.folder-icon::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  right: 7px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.folder-card:hover .folder-icon {
+  transform: rotate(-2deg) scale(1.04);
+  background: #c96b4a;
+}
+
+.folder-card:hover .folder-icon::before {
+  background: #b64032;
+}
+
+.folder-info h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.folder-info p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 /* =========================
@@ -437,6 +567,20 @@ img {
   }
 }
 
+@media (max-width: 820px) {
+  .folder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .folder-card {
+    padding: 22px;
+  }
+
+  .folder-info h3 {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 720px) {
   .topbar {
     padding: 22px 22px 0;
@@ -451,8 +595,9 @@ img {
   }
 
   .nav {
-    gap: 18px;
+    gap: 20px;
     flex-wrap: wrap;
+    font-size: 18px;
   }
 
   .page {
@@ -512,6 +657,31 @@ img {
     font-size: 21px;
   }
 
+  .folder-card {
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .folder-icon {
+    width: 42px;
+    height: 31px;
+    margin-top: 7px;
+  }
+
+  .folder-icon::before {
+    top: -8px;
+    width: 20px;
+    height: 10px;
+  }
+
+  .folder-info h3 {
+    font-size: 23px;
+  }
+
+  .folder-info p {
+    font-size: 14.5px;
+  }
+
   .footer-map {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -520,11 +690,4 @@ img {
   .site-footer {
     padding: 28px 22px 48px;
   }
-}
-
-.github-icon {
-  width: 17px;
-  height: 17px;
-  fill: currentColor;
-  display: block;
 }

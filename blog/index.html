@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Blog · hemark</title>
+  <title>Blog / hemark</title>
   <meta name="description" content="Blog by He Kefei" />
 
   <link rel="stylesheet" href="/assets/css/style.css?v=20260707" />
@@ -13,12 +13,12 @@
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <a href="/index.html" class="brand">hemark</a>
+      <a href="/" class="brand">hemark</a>
 
       <nav class="nav">
-        <a href="/about.html">About</a>
-        <a href="/notes.html">Notes</a>
-        <a href="/blog.html">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/notes/">Notes</a>
+        <a href="/blog/">Blog</a>
       </nav>
     </div>
   </header>
@@ -36,7 +36,7 @@
 
       <div class="contact-block">
         <a class="contact-link" href="mailto:markcgo@outlook.com">
-          <span class="contact-icon">✉</span>
+          <span class="contact-icon">&#9993;</span>
           <span class="contact-text">Email</span>
         </a>
 
@@ -50,7 +50,7 @@
         </a>
 
         <a class="contact-link" href="https://x.com/Hemarkc" target="_blank" rel="noopener noreferrer">
-          <span class="contact-icon">𝕏</span>
+          <span class="contact-icon">X</span>
           <span class="contact-text">X</span>
         </a>
       </div>
@@ -65,33 +65,12 @@
         </h2>
 
         <p class="page-desc">
-          Blog — longer essays about learning, research, and personal systems.
+          Blog - longer essays about learning, research, and personal systems.
         </p>
       </section>
 
       <section class="section">
-        <div class="section-body list-block">
-          <article class="entry">
-            <div class="entry-meta">2026-07-07 · Learning</div>
-            <div class="entry-main">
-              <a href="#" class="entry-title">Why I decided to build a learning garden</a>
-              <p class="entry-desc">
-                On learning in public, building a personal archive, and turning scattered
-                inputs into reusable knowledge.
-              </p>
-            </div>
-          </article>
-
-          <article class="entry">
-            <div class="entry-meta">2026-07-07 · Website</div>
-            <div class="entry-main">
-              <a href="#" class="entry-title">What I want this website to become</a>
-              <p class="entry-desc">
-                A note on structure, purpose, and how I want to use writing as a way to think.
-              </p>
-            </div>
-          </article>
-        </div>
+        <div class="section-body list-block" data-blogs-list></div>
       </section>
     </section>
   </main>
@@ -101,9 +80,9 @@
       <div class="footer-column">
         <h4>Read</h4>
         <p>
-          <a href="/notes.html">Notes</a>
-          <span>·</span>
-          <a href="/blog.html">Blog</a>
+          <a href="/notes/">Notes</a>
+          <span>/</span>
+          <a href="/blog/">Blog</a>
         </p>
       </div>
 
@@ -118,15 +97,17 @@
         <h4>Contact</h4>
         <p>
           <a href="mailto:markcgo@outlook.com">Email</a>
-          <span>·</span>
+          <span>/</span>
           <a href="https://x.com/Hemarkc" target="_blank" rel="noopener noreferrer">X</a>
         </p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 hemark. Built by hand with HTML & CSS.</p>
+      <p>&copy; 2026 hemark. Built by hand with HTML &amp; CSS.</p>
     </div>
   </footer>
+  <script src="/assets/js/blog-data.js"></script>
+  <script src="/assets/js/render-blogs.js"></script>
 </body>
 </html>
